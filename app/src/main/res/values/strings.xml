@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">番販記録くん(仮)</string>
+    <string name="title_activity_present">present</string>
+    <string-array name="deck">
+        <item>XDCAM1</item>
+        <item>XDCAM2</item>
+        <item>XDCAM3</item>
+        <item>XDCAM4</item>
+        <item>XDCAM5</item>
+        <item>XDCAM6</item>
+        <item>XDCAM7</item>
+        <item>XDCAM8</item>
+        <item>HDCAM1</item>
+        <item>HDCAM2</item>
+        <item>HDCAM3</item>
+        <item>HDCAM4</item>
+        <item>HDCAM5</item>
+        <item>HDCAM6</item>
+        <item>HDCAM7</item>
+        <item>HDCAM8</item>
+        <item>EDIUS1</item>
+        <item>EDIUS2</item>
+    </string-array>
+
+    <string-array name="title">
+        <item>タイトルを選択……</item>
+        <item>ポケットモンスター サンアンドムーン</item>
+        <item>妖怪ウォッチ</item>
+        <item>YOUは何しに日本へ？</item>
+    </string-array>
+    >
+</resources>

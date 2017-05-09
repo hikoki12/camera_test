@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:scaleType="fitXY"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <Button
+        android:id="@+id/btn_mother"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@color/zxing_possible_result_points"
+        android:backgroundTint="@color/zxing_possible_result_points"
+        android:onClick="onCameraImageClick"
+        android:text="バーコードあり"
+        android:textSize="32sp" />
+
+    <Button
+        android:id="@+id/btn_dab"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@color/zxing_possible_result_points"
+        android:backgroundTint="@color/zxing_possible_result_points"
+        android:onClick="onCameraImageClick"
+        android:text="バーコードなし"
+        android:textSize="32sp" />
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="作業内容を選択してください。"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+</LinearLayout>

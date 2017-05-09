@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    android:background="@color/colorAccent"
+    android:focusableInTouchMode="true"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:weightSum="1"
+    tools:context=".present">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/out_deck_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="出しデッキ："
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="23dp" />
+
+        <Spinner
+            android:id="@+id/out_deck_spin"
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.89"
+            android:entries="@array/deck"
+            android:textSize="23dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No:" />
+
+        <EditText
+            android:id="@+id/edit_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textColor="@android:color/holo_red_dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/in_deck_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="受けデッキ："
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="23dp" />
+
+        <Spinner
+            android:id="@+id/in_deck_spin"
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.89"
+            android:entries="@array/deck"
+            android:textSize="23dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/in_No"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No:" />
+
+        <EditText
+            android:id="@+id/edit_in"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textColor="@android:color/holo_red_dark" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:onClick="exChange"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/sw_btn" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imageButton"
+            android:layout_width="180dp"
+            android:layout_height="97dp"
+            android:onClick="onSendButtonClick"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/sub31" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
